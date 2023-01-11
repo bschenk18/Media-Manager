@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		CD3819EE296CA0AD009DE79A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3819ED296CA0AD009DE79A /* AppDelegate.swift */; };
 		CD3819F0296CA0AD009DE79A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3819EF296CA0AD009DE79A /* SceneDelegate.swift */; };
-		CD3819F2296CA0AD009DE79A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3819F1296CA0AD009DE79A /* ViewController.swift */; };
 		CD3819F5296CA0AD009DE79A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3819F3296CA0AD009DE79A /* Main.storyboard */; };
 		CD3819F8296CA0AD009DE79A /* MediaManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD3819F6296CA0AD009DE79A /* MediaManager.xcdatamodeld */; };
 		CD3819FA296CA0AE009DE79A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3819F9296CA0AE009DE79A /* Assets.xcassets */; };
 		CD3819FD296CA0AE009DE79A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3819FB296CA0AE009DE79A /* LaunchScreen.storyboard */; };
+		CD381A0B296CA3AC009DE79A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A0A296CA3AC009DE79A /* CoreDataStack.swift */; };
+		CD381A0D296CA9AA009DE79A /* MediaItem+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A0C296CA9AA009DE79A /* MediaItem+Convenience.swift */; };
+		CD381A0F296CAB1F009DE79A /* MediaItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A0E296CAB1F009DE79A /* MediaItemController.swift */; };
+		CD381A11296CAEC8009DE79A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A10296CAEC8009DE79A /* HomeTableViewController.swift */; };
+		CD381A15296CC527009DE79A /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A14296CC527009DE79A /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD3819EA296CA0AD009DE79A /* MediaManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3819ED296CA0AD009DE79A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD3819EF296CA0AD009DE79A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD3819F1296CA0AD009DE79A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD3819F4296CA0AD009DE79A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD3819F7296CA0AD009DE79A /* MediaManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediaManager.xcdatamodel; sourceTree = "<group>"; };
 		CD3819F9296CA0AE009DE79A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3819FC296CA0AE009DE79A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3819FE296CA0AE009DE79A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD381A0A296CA3AC009DE79A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CD381A0C296CA9AA009DE79A /* MediaItem+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MediaItem+Convenience.swift"; sourceTree = "<group>"; };
+		CD381A0E296CAB1F009DE79A /* MediaItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemController.swift; sourceTree = "<group>"; };
+		CD381A10296CAEC8009DE79A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		CD381A14296CC527009DE79A /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,68 @@
 		CD3819EC296CA0AD009DE79A /* MediaManager */ = {
 			isa = PBXGroup;
 			children = (
+				CD381A04296CA279009DE79A /* Models */,
+				CD381A05296CA292009DE79A /* Controllers */,
+				CD381A07296CA2CD009DE79A /* Views */,
+				CD381A06296CA2A6009DE79A /* Resources */,
+			);
+			path = MediaManager;
+			sourceTree = "<group>";
+		};
+		CD381A04296CA279009DE79A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD3819F6296CA0AD009DE79A /* MediaManager.xcdatamodeld */,
+				CD381A0A296CA3AC009DE79A /* CoreDataStack.swift */,
+				CD381A0C296CA9AA009DE79A /* MediaItem+Convenience.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD381A05296CA292009DE79A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD381A08296CA30E009DE79A /* Model Controllers */,
+				CD381A09296CA320009DE79A /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD381A06296CA2A6009DE79A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				CD3819ED296CA0AD009DE79A /* AppDelegate.swift */,
 				CD3819EF296CA0AD009DE79A /* SceneDelegate.swift */,
-				CD3819F1296CA0AD009DE79A /* ViewController.swift */,
-				CD3819F3296CA0AD009DE79A /* Main.storyboard */,
 				CD3819F9296CA0AE009DE79A /* Assets.xcassets */,
 				CD3819FB296CA0AE009DE79A /* LaunchScreen.storyboard */,
 				CD3819FE296CA0AE009DE79A /* Info.plist */,
-				CD3819F6296CA0AD009DE79A /* MediaManager.xcdatamodeld */,
 			);
-			path = MediaManager;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD381A07296CA2CD009DE79A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD3819F3296CA0AD009DE79A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD381A08296CA30E009DE79A /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD381A0E296CAB1F009DE79A /* MediaItemController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		CD381A09296CA320009DE79A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD381A10296CAEC8009DE79A /* HomeTableViewController.swift */,
+				CD381A14296CC527009DE79A /* AddItemViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD381A11296CAEC8009DE79A /* HomeTableViewController.swift in Sources */,
+				CD381A0B296CA3AC009DE79A /* CoreDataStack.swift in Sources */,
 				CD3819F8296CA0AD009DE79A /* MediaManager.xcdatamodeld in Sources */,
-				CD3819F2296CA0AD009DE79A /* ViewController.swift in Sources */,
 				CD3819EE296CA0AD009DE79A /* AppDelegate.swift in Sources */,
 				CD3819F0296CA0AD009DE79A /* SceneDelegate.swift in Sources */,
+				CD381A15296CC527009DE79A /* AddItemViewController.swift in Sources */,
+				CD381A0F296CAB1F009DE79A /* MediaItemController.swift in Sources */,
+				CD381A0D296CA9AA009DE79A /* MediaItem+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MPB6X29F75;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MediaManager/Info.plist;
+				INFOPLIST_FILE = MediaManager/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MPB6X29F75;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MediaManager/Info.plist;
+				INFOPLIST_FILE = MediaManager/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
