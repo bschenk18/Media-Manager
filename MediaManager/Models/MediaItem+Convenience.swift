@@ -19,6 +19,5 @@ extension MediaItem {
         self.wasWatched = wasWatched
         self.isFavorite = isFavorite
         self.reminderDate = reminderDate
-        
     }
 }

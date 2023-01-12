@@ -27,7 +27,7 @@ enum CoreDataStack {
                 try context.save()
              } catch {
                 NSLog("Error saving context \(error)")
-             }
-          }
-       }
+            }
+        }
+    }
 }

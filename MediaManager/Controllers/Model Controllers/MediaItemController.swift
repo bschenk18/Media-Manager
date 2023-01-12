@@ -10,12 +10,17 @@ import CoreData
 class MediaItemController {
     
     static let shared = MediaItemController()
+    
+    private init() {
+          fetchMediaItems()
+       }
 
     var mediaItems: [MediaItem] = []
     var favorites: [MediaItem] = []
     var movies: [MediaItem] = []
     var tvShows: [MediaItem] = []
     var sections: [[MediaItem]] { [favorites, movies, tvShows] }
+    let notificationScheduler = NotificationScheduler()
 
     private lazy var fetchRequest: NSFetchRequest<MediaItem> = {
        let request = NSFetchRequest<MediaItem>(entityName: "MediaItem")
@@ -54,6 +59,22 @@ class MediaItemController {
        CoreDataStack.saveContext()
        fetchMediaItems()
     }
+    
+    func updateMediaItem() {
+          CoreDataStack.saveContext()
+          fetchMediaItems()
+       }
+    
+    func updateMediaItemReminderDate(_ mediaItem: MediaItem) {
+        notificationScheduler.scheduleNotifications(mediaItem: mediaItem)
+        CoreDataStack.saveContext()
+    }
+
+       func deleteMediaItem(_ mediaItem: MediaItem) {
+          CoreDataStack.context.delete(mediaItem)
+          CoreDataStack.saveContext()
+          fetchMediaItems()
+       }
  }
 
 

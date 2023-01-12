@@ -18,6 +18,11 @@
 		CD381A0F296CAB1F009DE79A /* MediaItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A0E296CAB1F009DE79A /* MediaItemController.swift */; };
 		CD381A11296CAEC8009DE79A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A10296CAEC8009DE79A /* HomeTableViewController.swift */; };
 		CD381A15296CC527009DE79A /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A14296CC527009DE79A /* AddItemViewController.swift */; };
+		CD381A17296F23EA009DE79A /* MediaItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A16296F23EA009DE79A /* MediaItemTableViewController.swift */; };
+		CD381A19296F25D9009DE79A /* MediaItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD381A18296F25D9009DE79A /* MediaItemDetailViewController.swift */; };
+		CD44DFBE296F660F00AC5CBF /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44DFBD296F660F00AC5CBF /* EditItemViewController.swift */; };
+		CD44DFC02970BA6F00AC5CBF /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44DFBF2970BA6F00AC5CBF /* DatePickerViewController.swift */; };
+		CD44DFC42970D12300AC5CBF /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44DFC32970D12300AC5CBF /* NotificationScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		CD381A0E296CAB1F009DE79A /* MediaItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemController.swift; sourceTree = "<group>"; };
 		CD381A10296CAEC8009DE79A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		CD381A14296CC527009DE79A /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		CD381A16296F23EA009DE79A /* MediaItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemTableViewController.swift; sourceTree = "<group>"; };
+		CD381A18296F25D9009DE79A /* MediaItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemDetailViewController.swift; sourceTree = "<group>"; };
+		CD44DFBD296F660F00AC5CBF /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		CD44DFBF2970BA6F00AC5CBF /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		CD44DFC32970D12300AC5CBF /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 				CD3819F9296CA0AE009DE79A /* Assets.xcassets */,
 				CD3819FB296CA0AE009DE79A /* LaunchScreen.storyboard */,
 				CD3819FE296CA0AE009DE79A /* Info.plist */,
+				CD44DFC32970D12300AC5CBF /* NotificationScheduler.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -126,6 +137,10 @@
 			children = (
 				CD381A10296CAEC8009DE79A /* HomeTableViewController.swift */,
 				CD381A14296CC527009DE79A /* AddItemViewController.swift */,
+				CD381A16296F23EA009DE79A /* MediaItemTableViewController.swift */,
+				CD381A18296F25D9009DE79A /* MediaItemDetailViewController.swift */,
+				CD44DFBD296F660F00AC5CBF /* EditItemViewController.swift */,
+				CD44DFBF2970BA6F00AC5CBF /* DatePickerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -202,13 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD381A11296CAEC8009DE79A /* HomeTableViewController.swift in Sources */,
+				CD381A19296F25D9009DE79A /* MediaItemDetailViewController.swift in Sources */,
 				CD381A0B296CA3AC009DE79A /* CoreDataStack.swift in Sources */,
 				CD3819F8296CA0AD009DE79A /* MediaManager.xcdatamodeld in Sources */,
+				CD44DFBE296F660F00AC5CBF /* EditItemViewController.swift in Sources */,
+				CD381A17296F23EA009DE79A /* MediaItemTableViewController.swift in Sources */,
 				CD3819EE296CA0AD009DE79A /* AppDelegate.swift in Sources */,
 				CD3819F0296CA0AD009DE79A /* SceneDelegate.swift in Sources */,
+				CD44DFC02970BA6F00AC5CBF /* DatePickerViewController.swift in Sources */,
 				CD381A15296CC527009DE79A /* AddItemViewController.swift in Sources */,
 				CD381A0F296CAB1F009DE79A /* MediaItemController.swift in Sources */,
 				CD381A0D296CA9AA009DE79A /* MediaItem+Convenience.swift in Sources */,
+				CD44DFC42970D12300AC5CBF /* NotificationScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
